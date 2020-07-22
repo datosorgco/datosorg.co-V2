@@ -1,0 +1,62 @@
+<script>
+  // Basic Config
+  let config = {
+    /* Replace it with your domain: ghost_host: 'https://yoursite.domain' */
+    ghost_url: 'http://localhost:3368', 
+    
+    /* Settings > Integrations > New Custom Integration. Copy Key. Replace ghost_key below. */
+    ghost_key: '55a4116f266aa7f13f51a90d72', 
+
+    /* Default Color Scheme. Values: preference(detects user setting), light, dark. */
+    color_scheme: 'preference',
+
+    /* Default view of posts: list/grid. */
+    view_type: 'grid',
+
+    /* Nr of columns for post cards: 2/3. */
+    grid_columns: 3,
+
+    /* Enable lightbox for post images */
+    image_lightbox: true,
+
+    /* Enable Scroll Top Button */
+    scroll_to_top: true,
+
+    /* Header position: initial/sticky/fixed */
+    header_position: 'initial',
+
+    /* Replace 'biron-demo' with your disqus account shortname */
+    disqus_shortname: 'biron-demo'  
+  }
+
+  // Dark/Light Theme Handling
+  let preferredTheme; 
+  if (config.color_scheme === 'preference') {
+    const preferredColorScheme = 
+    ( window.matchMedia 
+      && window.matchMedia('(prefers-color-scheme: dark)').matches
+    ) 
+    ? 'dark' 
+    : 'light'
+    preferredTheme = localStorage.getItem('USER_COLOR_SCHEME') || preferredColorScheme;
+  } else {
+    preferredTheme = localStorage.getItem('USER_COLOR_SCHEME') || config.color_scheme;
+  }
+  document.documentElement.setAttribute('data-color-scheme', preferredTheme);
+
+  // Grid/List View Handling
+  let preferredView = localStorage.getItem('USER_VIEW_TYPE') || config.view_type;
+  document.documentElement.setAttribute('data-view-type', preferredView);
+
+  // Grid columns setting
+  document.documentElement.setAttribute('data-grid-columns', config.grid_columns);
+  
+  // Global values needed
+  const global = {
+    pagination_current_page: parseInt('{{pagination.page}}'),
+    pagination_next_page: parseInt('{{pagination.next}}'),
+    pagination_next_page_link: '',
+    pagination_max_pages: parseInt('{{pagination.pages}}'), 
+    pagination_posts_per_page: parseInt('{{@config.posts_per_page}}'),
+  }
+</script>
