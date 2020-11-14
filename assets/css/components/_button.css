@@ -1,7 +1,7 @@
 .btn {
   color: inherit;
   font-weight: var(--font-weight-800);
-  font-family: var(--font-sans);
+  font-family: var(--font-head3);
   font-size: 0.9rem;
   letter-spacing: calc(0.025 * var(--font-size-base));
   line-height: 1;
