@@ -141,4 +141,7 @@
   src: url('/assets/fonts/mark-pro-bold.ttf') format('woff2');
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@font-face {
+  font-family: 'Josefina Sans';
+  src: url('/assets/fonts/josefinsans.ttf') format('woff2');
+}
