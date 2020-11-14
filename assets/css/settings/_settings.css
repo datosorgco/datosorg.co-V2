@@ -13,13 +13,13 @@
   /*--------------------------------------*/
   /* Colors
   /*--------------------------------------*/
-  --color-primary: hsl(249,79%,62%);
-  --color-primary-light: hsl(249,79%,67%);
-  --color-primary-dark: hsl(249,79%,52%);
+  --color-primary: hsl(248,100%,53%);
+  --color-primary-light: hsl(248,100%,58%);
+  --color-primary-dark: hsl(248,100%,48%);
 
-  --color-secondary: hsl(157,90%,49%);
-  --color-secondary-light: hsl(157,90%,54%);
-  --color-secondary-dark: hsl(157,90%,44%);
+  --color-secondary: hsl(168,100%,50%);
+  --color-secondary-light: hsl(168,100%,60%);
+  --color-secondary-dark: hsl(168,100%,40%);
 
   /* neutral colors */
   --color-black: hsl(0, 0%, 0%);
