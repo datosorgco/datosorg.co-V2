@@ -115,29 +115,29 @@
 
 @font-face {
   font-family: 'bebas_neuelight';
-  src: url('/assets/bebasneue_light-webfont.woff2') format('woff2'),
-  url('/assets/bebasneue_light-webfont.woff') format('woff');
+  src: url('/assets/fonts/bebasneue_light-webfont.woff2') format('woff2'),
+  url('/assets/fonts/bebasneue_light-webfont.woff') format('woff');
 }
 
 @font-face {
   font-family: 'robotobold';
-  src: url('/assets/roboto-bold-webfont.woff2') format('woff2'),
-  url('/assets/roboto-bold-webfont.woff') format('woff');
+  src: url('/assets/fonts/roboto-bold-webfont.woff2') format('woff2'),
+  url('/assets/fonts/roboto-bold-webfont.woff') format('woff');
 }
 
 @font-face {
   font-family: 'robotoregular';
-  src: url('/assets/roboto-regular-webfont.woff2') format('woff2'),
+  src: url('/assets/fonts/roboto-regular-webfont.woff2') format('woff2'),
   url('/assets/roboto-regular-webfont.woff') format('woff');
 }
 
 @font-face {
   font-family: 'robotolight';
-  src: url('/assets/roboto-light-webfont.woff2') format('woff2'),
-  url('/assets/roboto-light-webfont.woff') format('woff');
+  src: url('/assets/fonts/roboto-light-webfont.woff2') format('woff2'),
+  url('/assets/fonts/roboto-light-webfont.woff') format('woff');
 }
 
 @font-face {
   font-family: 'markprobold';
-  src: url('/assets/mark-pro-bold.ttf') format('woff');
+  src: url('/assets/fonts/mark-pro-bold.ttf') format('woff');
 }
