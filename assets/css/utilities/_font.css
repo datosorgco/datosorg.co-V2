@@ -115,8 +115,7 @@
 
 @font-face {
   font-family: 'bebas_neuelight';
-  src: url('/assets/fonts/bebasneue_light-webfont.woff2') format('woff2'),
-  url('/assets/fonts/bebasneue_light-webfont.woff') format('woff');
+  src: url('/assets/fonts/bebasneue-regular.ttf') format('ttf');
 }
 
 @font-face {
@@ -139,5 +138,5 @@
 
 @font-face {
   font-family: 'markprobold';
-  src: url('/assets/fonts/mark-pro-bold.ttf') format('woff');
+  src: url('/assets/fonts/mark-pro-bold.ttf') format('ttf');
 }
