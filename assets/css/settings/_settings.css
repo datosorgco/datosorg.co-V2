@@ -68,13 +68,13 @@
   /*--------------------------------------*/
   /* Typography
   /*--------------------------------------*/
-  --font-head1: 'markprobold', Tahoma, Arial, sans-serif;
-  --font-head2: 'bebas_neuelight', Tahoma, Arial, sans-serif;
-  --font-head3: 'robotobold', Tahoma, Arial, sans-serif;
-  --font-head4: 'robotoregular', Tahoma, Arial, sans-serif;
-  --font-body: 'robotolight', Tahoma, Arial, sans-serif;
-  --font-serif: Times, Georgia, serif;
-  --font-sans: 'robotolight', Tahoma, Arial, sans-serif;
+  --font-head1: 'markprobold', sans-serif;
+  --font-head2: 'Josefin Sans', sans-serif;
+  --font-head3: 'robotobold', sans-serif;
+  --font-head4: 'robotoregular', sans-serif;
+  --font-body: 'robotolight', sans-serif;
+  --font-serif: serif;
+  --font-sans: 'robotolight', sans-serif;
   --font-mono: Consolas, Monaco,  monospace;
   --font-size-base: 1rem;
   --font-weight-100: 100;
