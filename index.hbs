@@ -18,7 +18,6 @@
           <img src="https://image.flaticon.com/icons/png/128/1384/1384095.png" width="14"/> Proponer un proyecto
         </a>
 
-
         {{!-- Subscribe --}}
         {{#if @labs.members}}
         {{#if @member.paid}}
@@ -66,6 +65,16 @@
 <section class="section hero border-top-1{{#if @site.cover_image}} has-img{{/if}}">
   <div class="container wrapper w-100">
     <div class="hero__inner flex">
+
+      <img class="hero__img"
+           srcset='{{img_url @site.cover_image size='s"}} 300w,
+      {{img_url @site.cover_image size="m"}} 600w,
+      {{img_url @site.cover_image size="l"}} 1000w'
+      sizes="(max-width: 1000px) 50vw, 700px"
+      src="{{img_url @site.cover_image size="s"}}"
+      alt="{{@site.title}}"/>
+
+
       <div class="hero__content flex flex-1 flex-col {{#unless @site.cover_image}} flex-cc{{/unless}}">
         {{!-- Title and description --}}
         <h1 class="hero__title">Datos abiertos para todos </h1>
@@ -79,47 +88,9 @@
            title="Proponer un proyecto" aria-label="Proponer un proyecto" style="margin-bottom: 10px;margin-right: 10px;">
           <img src="https://image.flaticon.com/icons/png/128/1384/1384095.png" width="14"/> Proponer un proyecto
         </a>
-
-
-        {{!-- Subscribe --}}
-        {{#if @labs.members}}
-        {{#if @member.paid}}
-        {{!-- Paid member - no CTA --}}
-        {{else if @member}}
-        <a class="btn btn--shadow btn--secondary" href="/membership/"
-           title="{{t "Upgrade"}}" aria-label="{{t "Upgrade"}}">
-        {{t "Upgrade"}}
-        </a>
-        {{else}}
-        <form data-members-form="subscribe">
-          <input data-members-email aria-labelledby="post-subscribe"
-                 type="email" placeholder="{{t "Your email address"}}" required/>
-          <button class="btn btn--secondary" type="submit"
-                  title="{{t "Subscribe"}}" aria-label="{{t "Subscribe"}}">
-          {{t "Subscribe"}}
-          </button>
-          <a tabindex="0" class="notify notify-success js-notify-close">
-            <div class="container wrapper flex flex-cc">
-              <div class="notify__msg flex-1">{{t "Great! Check your inbox and click the link to confirm your subscription"}}</div>
-              <div class="notify__close">{{>icon name="x" size="xs"}}</div>
-            </div>
-          </a>
-        </form>
-        {{/if}}
-        {{/if}}
       </div>
 
-      {{!-- Site cover image --}}
-      {{#if @site.cover_image}}
-      <img class="hero__img"
-           srcset="{{img_url @site.cover_image size="s"}} 300w,
-      {{img_url @site.cover_image size="m"}} 600w,
-      {{img_url @site.cover_image size="l"}} 1000w"
-      sizes="(max-width: 1000px) 50vw, 700px"
-      src="{{img_url @site.cover_image size="s"}}"
-      {{!-- src="{{> img-placeholder}}" --}}
-      alt="{{@site.title}}"/>
-      {{/if}}
+
     </div>
   </div>
 </section>
