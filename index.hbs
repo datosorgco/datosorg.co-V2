@@ -61,39 +61,6 @@
   </div>
 </section>
 
-{{!-- Hero Sections --}}
-<section class="section hero border-top-1{{#if @site.cover_image}} has-img{{/if}}">
-  <div class="container wrapper w-100">
-    <div class="hero__inner flex">
-
-      <img class="hero__img"
-           srcset="{{img_url @site.cover_image size="s"}} 300w,
-      {{img_url @site.cover_image size="m"}} 600w,
-      {{img_url @site.cover_image size="l"}} 1000w"
-      sizes="(max-width: 1000px) 50vw, 700px"
-      src="{{img_url @site.cover_image size="s"}}"
-      alt="{{@site.title}}"/>
-
-      <div class="hero__content flex flex-1 flex-col {{#unless @site.cover_image}} flex-cc{{/unless}}">
-        {{!-- Title and description --}}
-        <h1 class="hero__title">Datos abiertos para todos </h1>
-        <div class="hero__descr m-b{{#unless @site.cover_image}} text-center{{/unless}}">{{@site.description}}</div>
-        <a class="btn btn--shadow btn--primary" href="https://wa.me/573003622440?text=Quiero%20ser%20voluntario"
-           title="Quiero ser voluntario" aria-label="Quiero ser voluntario" style="
-    color: #FFF;margin-bottom: 10px;margin-right: 10px;">
-          <img src="https://image.flaticon.com/icons/png/128/1384/1384095.png" width="14" style="filter: invert(100%);"/> Quiero ser voluntario
-        </a>
-        <a class="btn btn--shadow btn--secondary" href="https://wa.me/573003622440?text=Quiero%20proponer%20un%20proyecto"
-           title="Proponer un proyecto" aria-label="Proponer un proyecto" style="margin-bottom: 10px;margin-right: 10px;">
-          <img src="https://image.flaticon.com/icons/png/128/1384/1384095.png" width="14"/> Proponer un proyecto
-        </a>
-      </div>
-
-
-    </div>
-  </div>
-</section>
-
 <div class="container wrapper">
   {{!-- Suscribe banner --}}
 
