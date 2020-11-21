@@ -110,7 +110,7 @@
 
   input {
     margin-bottom: 0;
-    background: var(--color-bg-acc-3);
+    background: var(--color-bg);
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     box-shadow: none;
