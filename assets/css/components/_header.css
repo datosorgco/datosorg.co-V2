@@ -115,6 +115,7 @@
   .signout-link,
   .account-link,
   .upgrade-link {
+    display:block !important;
     font-size: 0.9rem;
     font-weight: var(--font-weight-700);
     line-height: 1;
